@@ -21,7 +21,7 @@ class PopularFoods extends StatelessWidget {
 
   Widget _food(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.popAndPushNamed(context,OrderScreen.routeName) ,
+      onTap: () => Navigator.pushNamed(context,OrderScreen.routeName) ,
       child: SizedBox(
         height: 370. h,
         child: Stack(

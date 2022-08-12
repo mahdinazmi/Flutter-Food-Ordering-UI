@@ -14,33 +14,36 @@ class OrderAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          _back(),
+          _back(context),
           _favorite()
         ],
       ),
     );
   }
 
-  Widget _back() {
-    return Container(
-      height: 40. w,
-      width: 40. w,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(8),
-        boxShadow: const [
-          BoxShadow(
-            color: Color.fromARGB(255, 212, 212, 212),
-            blurRadius: 10,
-            spreadRadius: 3
+  Widget _back(BuildContext context) {
+    return GestureDetector(
+      onTap: () => Navigator.pop(context),
+      child: Container(
+        height: 40. w,
+        width: 40. w,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(8),
+          boxShadow: const [
+            BoxShadow(
+              color: Color.fromARGB(255, 212, 212, 212),
+              blurRadius: 10,
+              spreadRadius: 3
+            )
+          ],
+        ),
+        child: Center(
+          child: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            size: 23. sp,
           )
-        ],
-      ),
-      child: Center(
-        child: Icon(
-          Icons.arrow_back_ios_new_outlined,
-          size: 23. sp,
-        )
+        ),
       ),
     );
   }

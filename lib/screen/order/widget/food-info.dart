@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:orderfastfood/config/theme/theme.dart';
 
-import 'appbar.dart';
-
 class FoodInfo extends StatelessWidget {
   const FoodInfo({
     Key ? key

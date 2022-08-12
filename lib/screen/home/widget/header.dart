@@ -38,8 +38,8 @@ class HomeHeader extends StatelessWidget {
           'Let’s get your order',
           style: TextStyle(
             color: AppColors.colorTint600,
-            fontSize: 12. sp,
-            fontWeight: FontWeight.w400
+            fontSize: 14. sp,
+            fontWeight: FontWeight.w500
           ),
         ),
       ],
